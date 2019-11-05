@@ -8,10 +8,10 @@ resource "aws_route53_zone" "subdomain" {
   tags = merge(local.common_tags, var.custom_tags)
 }
 
-output "route53_subdomain_name_servers" {
+output "route53_name_servers" {
   value = aws_route53_zone.subdomain.name_servers
 }
 
-output "route53_subdomain_hosted_zone_id" {
+output "route53_hosted_zone_id" {
   value = aws_route53_zone.subdomain.zone_id
 }

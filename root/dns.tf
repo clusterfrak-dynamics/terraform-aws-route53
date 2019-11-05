@@ -17,10 +17,10 @@ resource "aws_route53_record" "ns_in_parent" {
   records = var.subdomains[count.index]["name_servers"]
 }
 
-output "route53_root_name_servers" {
+output "route53_name_servers" {
   value = aws_route53_zone.root.name_servers
 }
 
-output "route53_root_zone_id" {
+output "route53_hosted_zone_id" {
   value = aws_route53_zone.root.zone_id
 }
