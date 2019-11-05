@@ -20,3 +20,7 @@ resource "aws_route53_record" "ns_in_parent" {
 output "route53_root_name_servers" {
   value = aws_route53_zone.root.name_servers
 }
+
+output "route53_root_zone_id" {
+  value = aws_route53_zone.root.zone_id
+}
