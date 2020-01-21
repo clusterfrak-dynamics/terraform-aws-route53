@@ -6,7 +6,7 @@ terraform {
   backend "s3" {
   }
   required_providers {
-    aws      = "~> 2.40"
+    aws = "~> 2.40"
   }
 }
 

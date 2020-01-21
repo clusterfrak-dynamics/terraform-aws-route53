@@ -14,3 +14,8 @@ variable "custom_tags" {
   type    = map
   default = {}
 }
+
+variable "records" {
+  type    = any
+  default = {}
+}
