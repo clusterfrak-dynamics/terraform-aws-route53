@@ -53,4 +53,15 @@ inputs = {
     },
     local.custom_tags
   )
+
+  records = {
+    "myrecord" = {
+      name = "test"
+      type = "A"
+      ttl  = 300
+      records = [
+        "8.8.8.8"
+      ]
+    }
+  }
 }
