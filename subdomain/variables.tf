@@ -16,11 +16,6 @@ variable "custom_tags" {
 }
 
 variable "records" {
-  type    = any
-  default = {}
-}
-
-variable "records" {
   type        = map
   default     = {}
   description = "Map of records to add to the dns zone"
