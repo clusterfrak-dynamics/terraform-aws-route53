@@ -31,7 +31,7 @@ install:
     terraform version
 
 script:
-  - terraform fmt -check -diff
+  - bash scripts/tf_checks.sh
 
 after_success:
   - semantic-release -ghr -vf --travis-com
