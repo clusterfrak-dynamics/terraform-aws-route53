@@ -20,9 +20,3 @@ variable "records" {
   default     = {}
   description = "Map of records to add to the dns zone"
 }
-
-variable "records" {
-  type        = map
-  default     = {}
-  description = "Map of records to add to the dns zone"
-}
