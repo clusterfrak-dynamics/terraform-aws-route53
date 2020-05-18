@@ -21,5 +21,5 @@ output "route53_hosted_zone_id" {
 }
 
 output "route53_name" {
-  value = data.aws_route53_zone.selected.name
+  value = trimsuffix(data.aws_route53_zone.selected.name, ".")
 }
